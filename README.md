@@ -1,22 +1,60 @@
-**Quantum Phishing Detection System**
-A state-of-the-art phishing detection system leveraging quantum computing technologies including Quantum Random Number Generation (QRNG) and Quantum Support Vector Machines (QSVM).
+QCyber - Quantum Enhanced Phishing Detection System
+One Paragraph of the project description
 
-**Overview**
-This project implements a novel approach to phishing detection by applying quantum computing principles to traditional cybersecurity challenges. By utilizing quantum algorithms, we aim to enhance detection accuracy and resilience against sophisticated phishing attacks.
+Initially appeared on gist. But the page cannot open anymore so that is why I have moved it here.
 
-**Key Features**
-Quantum Random Number Generation (QRNG) for truly random feature sampling
-Quantum Support Vector Machine (QSVM) implementation for classification
-Hybrid classical-quantum architecture to optimize performance
-Real-time URL and email analysis capabilities
-High detection accuracy for zero-day phishing attempts
+Getting Started
+These instructions will give you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on deploying the project on a live system.
 
-**Technical Architecture**
-The system consists of the following components:
-Data Collection Module: Gathers and preprocesses URLs and email content
-Feature Extraction Engine: Transforms raw data into quantum-compatible feature vectors
-QRNG Subsystem: Provides true randomness for enhanced security
-QSVM Model: Core quantum machine learning algorithm for classification
-Reporting Interface: User-friendly visualization of detection results
+Prerequisites
+Requirements for the software and other tools to build, test and push
+
+Example 1
+Example 2
+Installing
+A step by step series of examples that tell you how to get a development environment running
+
+Say what the step will be
+
+Give the example
+And repeat
+
+until finished
+End with an example of getting some data out of the system or using it for a little demo
+
+Running the tests
+Explain how to run the automated tests for this system
+
+Sample Tests
+Explain what these tests test and why
+
+Give an example
+Style test
+Checks if the best practices and the right coding style has been used.
+
+Give an example
+Deployment
+Add additional notes to deploy this on a live system
+
+Built With
+Contributor Covenant - Used for the Code of Conduct
+Creative Commons - Used to choose the license
+Contributing
+Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
+
+Versioning
+We use Semantic Versioning for versioning. For the versions available, see the tags on this repository.
+
+Authors
+Billie Thompson - Provided README Template - PurpleBooth
+See also the list of contributors who participated in this project.
+
+License
+This project is licensed under the CC0 1.0 Universal Creative Commons License - see the LICENSE.md file for details
+
+Acknowledgments
+Hat tip to anyone whose code is used
+Inspiration
+etc
 
 
