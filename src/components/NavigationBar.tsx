@@ -1,12 +1,13 @@
 
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Menu, X, ShieldCheck, FileText, BarChart2, Globe, MessageSquare } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ThemeToggle from './ThemeToggle';
 
 const NavigationBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -45,10 +46,17 @@ const NavigationBar = () => {
           {/* Right side buttons */}
           <div className="hidden md:flex items-center space-x-2">
             <ThemeToggle />
-            <Button variant="outline" className="cyber-button text-xs">
+            <Button 
+              variant="outline" 
+              className="cyber-button text-xs"
+              onClick={() => navigate('/signin')}
+            >
               Sign In
             </Button>
-            <Button className="bg-cyber-blue text-cyber-black hover:bg-cyber-brightblue font-orbitron text-xs">
+            <Button 
+              className="bg-cyber-blue text-cyber-black hover:bg-cyber-brightblue font-orbitron text-xs"
+              onClick={() => navigate('/register')}
+            >
               Register
             </Button>
           </div>
@@ -83,10 +91,25 @@ const NavigationBar = () => {
               Threat Intel
             </Link>
             <div className="flex flex-col space-y-2 pt-4 pb-2 border-t border-cyber-blue/20">
-              <Button variant="outline" size="sm" className="cyber-button w-full">
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="cyber-button w-full"
+                onClick={() => {
+                  navigate('/signin');
+                  toggleMobileMenu();
+                }}
+              >
                 Sign In
               </Button>
-              <Button size="sm" className="bg-cyber-blue text-cyber-black hover:bg-cyber-brightblue font-orbitron w-full">
+              <Button 
+                size="sm" 
+                className="bg-cyber-blue text-cyber-black hover:bg-cyber-brightblue font-orbitron w-full"
+                onClick={() => {
+                  navigate('/register');
+                  toggleMobileMenu();
+                }}
+              >
                 Register
               </Button>
             </div>
