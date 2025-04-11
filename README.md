@@ -1,4 +1,4 @@
-# Quantum Phishing Detection System
+# QCyber - Quantum Enhanced Phishing Detection System
 
 A cybersecurity solution that leverages quantum computing technologies to detect and prevent sophisticated phishing attacks. The system combines Quantum Random Number Generation (QRNG) for enhanced sampling techniques and Quantum Support Vector Machines (QSVM) for high-accuracy classification of potential phishing threats.
 
